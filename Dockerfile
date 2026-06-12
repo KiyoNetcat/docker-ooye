@@ -1,5 +1,4 @@
-ARG NODE_VERSION=20
-FROM node:${NODE_VERSION}-alpine AS base
+FROM node:alpine AS base
 
 RUN apk add git
 RUN git clone -b main https://gitdab.com/cadence/out-of-your-element.git /app
